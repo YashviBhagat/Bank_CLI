@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: bankcli-db
+    environment:
+      POSTGRES_DB: bankcli
+      POSTGRES_USER: bankcli
+      POSTGRES_PASSWORD: bankcli
+    ports:
+      - "5432:5432"
+    volumes:
+      - bankcli_data:/var/lib/postgresql/data
+
+volumes:
+  bankcli_data:
