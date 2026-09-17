@@ -1,7 +1,7 @@
 CREATE TABLE accounts (
     account_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     pin VARCHAR(10) NOT NULL,
-    balance NUMERIC(15,2) NOT NULL DEFAULT 0.00
+    current_balance NUMERIC(15,2) NOT NULL DEFAULT 0.00
 );
 
 CREATE TABLE transaction (
