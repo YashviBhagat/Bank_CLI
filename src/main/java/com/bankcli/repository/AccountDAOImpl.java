@@ -59,7 +59,19 @@ public class AccountDAOImpl implements AccountDAO {
             throw databaseError("Could not update balance", e);
         }
 
+
     }
+
+    @Override
+    public void updateBalance(Connection connection, int acc_id, double newBalance) {
+        try (PreparedStatement statement = connection.prepareStatement(UPDATE_SQL)) {
+            statement.setDouble(1, newBalance);
+            statement.setInt(2, acc_id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw databaseError("Could not update balance", e);
+    }
+}
     
     
     private Account mapAccount(ResultSet resultSet) throws SQLException {

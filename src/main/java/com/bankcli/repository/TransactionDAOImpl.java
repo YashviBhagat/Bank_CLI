@@ -40,6 +40,19 @@ public class TransactionDAOImpl implements TransactionDAO {
         }
     
     }
+
+    @Override
+    public void addTransaction(Connection connection, Transaction transaction) {
+        try (PreparedStatement statement = connection.prepareStatement(INSERT_SQL)) {
+            statement.setInt(1, transaction.getFromAccId());
+            statement.setInt(2, transaction.getToAccId());
+            statement.setString(3, transaction.getTranType());
+            statement.setDouble(4, transaction.getTranAmount());
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw databaseError("Could not add transaction", e);
+        }
+    }
     @Override
     public List<Transaction> getTransactionByAccId(int acc_id){
         List<Transaction> transactions = new ArrayList<>();
