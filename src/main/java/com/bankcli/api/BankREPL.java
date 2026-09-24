@@ -1,7 +1,7 @@
 package com.bankcli.api;
 import java.util.List;
 import java.util.Scanner;
-import java.time.format.DateTimeFormatter;
+
 
 import com.bankcli.business.*;
 import com.bankcli.domain.*;
@@ -25,7 +25,7 @@ public class BankREPL {
                 loggedOutMenu();
             }
             else{
-                loggInMenu();
+                logInMenu();
             }
 
         }
@@ -83,7 +83,7 @@ public class BankREPL {
         }
     }   
     
-    public void loggInMenu(){
+    public void logInMenu(){
         System.out.println("\n=== Bank of CLI ===");
         System.out.println("1. Check Balance");
         System.out.println("2. Withdraw");
