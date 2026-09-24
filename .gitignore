@@ -1,2 +1,4 @@
 # --- ignore db.properties because it contain password ---
 db.properties
+target/
+logs/
