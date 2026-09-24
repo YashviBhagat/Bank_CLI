@@ -1,0 +1,7 @@
+2026-09-18 13:55:54 INFO  [main] c.b.business.AccountServiceImpl - Account 1234 registered successfully
+2026-09-18 13:56:20 INFO  [main] c.b.business.AccountServiceImpl - Account 9000 registered successfully
+2026-09-18 13:56:42 ERROR [main] c.b.business.AccountServiceImpl - Login failed: incorrect PIN for account 9000
+2026-09-18 13:57:05 INFO  [main] c.b.business.AccountServiceImpl - Account 9000 logged in successfully
+2026-09-18 13:57:13 INFO  [main] c.b.business.TransactionServiceImpl - deposit success: account 9000 deposit money successfully
+2026-09-18 13:58:22 INFO  [main] c.b.business.TransactionServiceImpl - transfer success: 34.0 from account 9000 to 1234
+2026-09-18 13:59:04 INFO  [main] c.b.business.AccountServiceImpl - Account 1234 logged in successfully

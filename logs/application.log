@@ -1,0 +1,13 @@
+2026-09-23 14:54:15 ERROR [main] c.b.business.AccountServiceImpl - Login failed: account 7890 not found
+2026-09-23 15:43:48 INFO  [main] c.b.business.AccountServiceImpl - Registration failed: account 4444 already exists!
+2026-09-23 16:06:05 INFO  [main] c.b.business.AccountServiceImpl - Account 1111 registered successfully
+2026-09-23 16:06:16 INFO  [main] c.b.business.AccountServiceImpl - Account 1111 logged in successfully
+2026-09-23 16:11:09 INFO  [main] c.b.business.AccountServiceImpl - Account 1111 logged in successfully
+2026-09-23 16:11:37 INFO  [main] c.b.business.TransactionServiceImpl - deposit success: account 1111 deposit money successfully
+2026-09-23 19:10:52 INFO  [main] c.b.business.TransactionServiceImpl - withdraw success: account 9000 withdraw money successfully
+2026-09-23 19:10:52 INFO  [main] c.b.business.TransactionServiceImpl - withdraw success: account 9000 withdraw money successfully
+2026-09-23 19:22:07 ERROR [main] c.b.business.AccountServiceImpl - Login failed: account 111 not found
+2026-09-23 19:22:29 INFO  [main] c.b.business.AccountServiceImpl - Account 1111 logged in successfully
+2026-09-23 19:24:00 INFO  [main] c.b.business.AccountServiceImpl - Account 1111 logged in successfully
+2026-09-23 19:24:36 INFO  [main] c.b.business.TransactionServiceImpl - transfer success: 600.0 from account 1111 to 9000
+2026-09-23 19:25:40 ERROR [main] c.b.business.AccountServiceImpl - Login failed: incorrect PIN for account 9000
